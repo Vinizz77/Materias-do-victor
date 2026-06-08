@@ -27,7 +27,7 @@
     }
     }
 
-    $pessoa1 = new ContaBancaria();
+    //$pessoa1 = new ContaBancaria();
     var_dump($pessoa1);
     $pessoa1->titular = "Maria";
     var_dump($pessoa1);
