@@ -17,5 +17,11 @@
             return $this->idade;
         }
     }
+    $obj= new Pessoa();
+    $obj->setNome("Vinicius");
+    $obj->setIdade(67);
+    echo $obj->getNome();
+    echo "<br>";
+    echo $obj->getIdade();
 
 ?>
