@@ -1,29 +1,101 @@
 <?php
-function dividir(int $a, int $b): float
-{
-    if ($b != 0) {
-        return $a / $b;
-    } else {
-        echo "O divisor não pode ser zero.";
-        return 0;
+#ex1-
+    function saudacao(): void{
+        echo "Bem-vindo ao curso de php";
     }
-}
 
-echo dividir(36, 0);
+    saudacao();
 
-echo "<br>";
+#ex2-
+    function nome(string $n): void{
+        echo "Olá ". $n;
+    }
+    
 
-function somar(int $n1, int $n2): void{
-    echo $n1+$n2;
-}
-$resultdoSoma = somar(30,37);
-var_dump($resultdoSoma);
-echo "<br>";
+    echo "<br>";
+    nome("Vini");
 
-echo "<br>";
+#ex3-
+    function idade(int $i): void{
+        echo "Voce tem ". $i . " anos";
+    }
+    
 
-function mult(int $n3, int $n4): int{
-    return $n3*$n4;}
-$resultdoMult = mult(45,32);
-var_dump($resultdoMult);
+    echo "<br>";
+    idade(67);
+
+#ex4-
+    function tabuada(): void{
+        for ($t=0; $t<=10; $t++)
+        { $resp= $t*5;
+        echo "<br>";
+        echo $resp;}
+    }
+    
+
+    echo "<br>";
+    tabuada();
+
+#ex5-
+    function verificarIdade(int $id): void{
+        if ($id>=18){
+            echo "Você é maior de idade";
+        }
+        else {
+            echo "Você é menor de idade";
+        }
+    }
+    
+    echo "<br>";
+    verificarIdade(36);
+
+#ex6-
+    function soma(int $a, int $b): void{
+        $res= $a+$b;
+        echo $res;
+    }
+
+    echo "<br>";
+    soma(30, 37);
+
+#ex7-
+    function dobro(int $d): void{
+        $dob= $d*2;
+        echo $dob;
+    }
+
+    echo "<br>";
+    dobro(5);
+
+#ex8-
+    function media(int $a, int $b, int $c): void{
+        $som= $a+$b+$c;
+        $div= $som/3;
+        echo $som;
+    }
+
+    echo "<br>";
+    media(30, 30, 7);
+
+#ex9-
+    function minusculo(string $t):void{
+        $min= strtoupper($t);
+        echo$min;
+    }
+    
+    echo "<br>";
+    minusculo("php");
+
+#ex10-
+    function ehpar(int $n):void{
+        if($n/2===0){
+            echo "Par";
+        }
+        else{
+            echo "Impar";
+        }
+    }
+
+    echo "<br>";
+    ehpar(7);
   ?>
