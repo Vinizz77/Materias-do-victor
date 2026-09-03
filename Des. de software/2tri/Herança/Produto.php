@@ -17,9 +17,15 @@
     }
 
     $obj= new ProdutoEletronico();
+<<<<<<< HEAD
     $obj->nome ="Iphone 17";
     $obj->preco="18.000,00";
     $obj->marca="Apple";
+=======
+    $obj->nome("Iphone 17");
+    $obj->preco("18.000,00");
+    $obj->marca("Apple");
+>>>>>>> 56c9989307df7cf8593ec8562358f7a5d040e95f
 
     $obj->exibirInfo();
 ?>
