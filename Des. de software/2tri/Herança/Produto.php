@@ -8,11 +8,11 @@
     class ProdutoEletronico extends Produto{
         public $marca;
         public function exibirInfo():void{
-            echo "Nome:". $nome;
+            echo "Nome:". $this->nome;
             echo "<br>";
-            echo "Preço:". $preco;
+            echo "Preço:". $this->preco;
             echo "<br>";
-            echo "Marca:". $marca;
+            echo "Marca:". $this->marca;
         }
     }
 
